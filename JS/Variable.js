@@ -118,5 +118,14 @@ console.log(challenge.split(" "))
 let socialMedia="Facebook,Google,Microsoft,Apple,IBM,Oracle,Amazon"
 console.log(socialMedia.split(","))
 console.log(challenge.replace("30 Days Of JavaScript","30 years Of Prayers"))
-
-
+console.log(challenge.charAt(15))
+console.log(challenge.charCodeAt(j))
+console.log(challenge.indexOf("a"))
+console.log(challenge.lastIndexOf("a"))
+let sentence="You cannot end a sentence with because because because is a conjunction"
+console.log(sentence.indexOf("because"))
+console.log(sentence.lastIndexOf("because"))
+console.log(sentence.search("because"))
+let challenge1=" 20 days of worship"
+console.log(challenge1.trim())
+console.log(challenge.repeat())
