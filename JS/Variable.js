@@ -128,4 +128,102 @@ console.log(sentence.lastIndexOf("because"))
 console.log(sentence.search("because"))
 let challenge1=" 20 days of worship"
 console.log(challenge1.trim())
-console.log(challenge.repeat())
+console.log(challenge.repeat(2))
+
+//Exercise 3
+let numOne=4
+let numTwo=3
+let sum=numOne+numTwo
+let diff=numOne-numTwo
+let mult=numOne*numTwo
+let div=numOne/numTwo
+let remainder=numOne%numTwo
+let powerOf=numOne**numTwo
+
+console.log(sum,diff,mult,div,remainder,powerOf)
+
+const Pi=3.14
+let radius=100
+const areaOfCircle=Pi*radius*radius
+console.log(areaOfCircle)
+const gravity=9.81
+let mass=72
+
+const weight=mass *gravity
+console.log(weight)
+
+//Comparison Operators
+
+console.log(3=="3")
+//Increment Operator
+//pre-increment
+let count=0
+console.log(++count)
+console.log(count)
+//post-increment
+let count1=0
+console.log(count1++)
+console.log(count1)
+ let count2=0
+ console.log(count2--)
+ console.log(count2)
+ //Ternary Operators
+ let isRaining=false
+ isRaining ?console.log("you need a rain coat."):console.log("No need for a rain coat.")
+ 
+let number1=-5
+number>0 ?console.log(`${number1} is a positive number`)
+:console.log(`${number1} is a negative number`)
+
+console.log(3+4*5);
+//Window Methods
+//alert(challenge)
+// let number3 = prompt('Enter number', 'number goes here')
+// console.log(number3)
+// const agree = confirm('Are you sure you like to delete? ')
+// console.log(agree)
+
+//Date Object .In javaScript time and date are created using JavaScript Date Object
+const now=new Date()
+const now1=new Date()
+const getTime=new Date()
+console.log(now)
+console.log(now1)
+console.log(getTime.toLocaleTimeString())
+console.log(now.getFullYear())
+console.log(now.getMonth())
+console.log(now.getDay())
+
+// let firstName="kingsley"
+// let lastName="Nwafor"
+// let country="Nigeria"
+let City="Lagos"
+// let age= 12
+let isMarried= false
+const Year=new Date()
+let year=Year.getFullYear()
+//Using typeOf method to check for the type of the element
+
+console.log(typeof(firstName))
+console.log(typeof(lastName))
+console.log(typeof(country))
+console.log(typeof(City))
+console.log(typeof(age))
+console.log(typeof(year))
+console.log(typeof(isMarried))
+
+console.log("10"==10)
+console.log(parseInt("9.8")==9.8)
+
+let sentence1="Ali is a boy"
+let sentence2="Simbi is a girl"
+if (typeof(sentence1)==typeof(sentence2)){
+  console.log(sentence1)
+}
+if (typeof(sentence2)==typeof(sentence1)){
+  console.log(sentence2)
+}
+
+if(sentence1="Ali is a boy"){
+  console.log(sentence1)
+}
