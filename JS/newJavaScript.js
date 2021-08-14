@@ -46,4 +46,11 @@ const names=[1,2,3,4,5,6]
 console.log(names.join(" #"))
 
 //slice array elements
+console.log(names.slice(2,names.length))
+// // splice method in array 
+// console.log(names.splice(2,18,9))
+const p=[5,6,7,8]
+console.log(names.concat(p))
+console.log(names+' '+p)
+console.log(names.includes(5))
 
