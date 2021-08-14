@@ -227,3 +227,6 @@ if (typeof(sentence2)==typeof(sentence1)){
 if(sentence1="Ali is a boy"){
   console.log(sentence1)
 }
+
+
+
