@@ -65,6 +65,143 @@ const areaOfCircle=(radius)=>{
 }
 
 console.log(areaOfCircle(10))
+/*unlimited number of parameters in regular function,it is 
+ also called variable args in Java*/
+
+ function sumAllNumber(){
+     console.log(arguments)
+ }
+ sumAllNumber(1,2,3,4,5,6,7,8,9)
+
+
+ //variable args with finding the solution to unlimited sum
+
+ function sumAllNumber1(){
+     let sum=0;
+     for(let i=0;i<arguments.length;i++){
+         sum+=arguments[i]
+     }
+     return sum
+ }
+
+console.log(sumAllNumber1(1,2,3,4,5,6,7))
+console.log(sumAllNumber1(10, 20, 13, 40, 10)) 
+console.log(sumAllNumber1(15, 20, 30, 25, 10, 33, 40))
+
+//variable args or unlimited number of parameters with arrow function
+
+const sumAllNumber2=(...args)=>{
+    console.log(args)
+}
+sumAllNumber2(1,2,3,4,5,6,7,8,9)
+
+const sumAllNums=(...args)=>{
+    let sum=0;
+    for (const element of args){
+        sum+=element
+    }
+    return sum
+}
+//Anonymous Function
+
+const anoymousFun= function(){
+    console.log("I am an anonymous function and my value is stored in anonymousFunction")
+}
+anoymousFun()
+
+function greetings(name='Peter'){
+    let message =`${name},welcome to 30 Days Of JavaScript`
+    return message
+}
+
+console.log(greetings())
+console.log(greetings('Asabeneh'))
+
+function generateFullName(FirstName='Asabeneh',lastName="Yetayeh"){
+    let space=" "
+    let fullName=FirstName+space+lastName
+    return fullName
+}
+console.log(generateFullName())
+
+function calculateAge(birthYear, currentYear = 2019) {
+    let age = currentYear - birthYear
+    return age
+  }
+  
+  console.log('Age: ',  calculateAge(1819))
+
+
+  function weightOfObject(mass,gravity=9.81){
+      let weight =mass *gravity +"N"
+      return weight
+  }
+
+  console.log("weight of an object in Newton",weightOfObject(100))
+  
+
+const weightOfObject2=(mass,gravity=9.81)=>mass*gravity+"N"
+   console.log("Weight of an object in Newton:") 
+
+//Exercise
+function fullName1(firstName,lastName){
+    let space=" "
+    fullName= firstName +space+ lastName
+    return fullName
+}
+console.log(fullName1("Kingsley","Nwafor"))
+
+function addNumber(param1,param2){
+    sum=param1+param2
+    return sum
+}
+console.log(addNumber(1,2))
+
+const areaOfRectangle=(length,width)=>{
+    area=length*width
+    return area
+}
+console.log(areaOfRectangle(5,5))
+
+
+const perimeterOfRectangle=(length,width)=>{
+    perimeter=2*(length+width)
+    return perimeter
+}
+
+console.log(perimeterOfRectangle(5,5))
+
+const areaOfACircle=(radius)=>{
+    area=Math.PI*radius**2
+    return area
+}
+console.log(areaOfACircle(3))
+
+const circumOfCircle=(radius)=>{
+    circumference=2*(Math.PI*radius)
+    return circumference
+}
+console.log(circumOfCircle(3))
+
+const density=(mass,volume)=>{
+    density1=(mass/volume)+"Kgm-3"
+    return density1
+}
+console.log(density(100,1000))
+
+const speed=(totalDistance,totalTimeTaken)=>{
+    speed1=(totalDistance/totalTimeTaken)+"ms-3"
+    return speed1
+}
+
+console.log(speed(1200,15))
+
+
+
+
+
+
+
 
 
 
