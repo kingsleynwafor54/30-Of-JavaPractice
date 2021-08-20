@@ -197,7 +197,74 @@ const speed=(totalDistance,totalTimeTaken)=>{
 console.log(speed(1200,15))
 
 
+// const person = {
+//     firstName: 'Asabeneh',
+//     age: 250,
+//     country: 'Finland',
+//     city:'Helsinki',
+//     skills: ['HTML', 'CSS', 'JS'],
+//     title: 'teacher',
+//     address: {
+//       street: 'Heitamienkatu 16',
+//       pobox: 2002,
+//       city: 'Helsinki'
+//     },
+//     getPersonInfo: function() {
+//       return `I am ${this.firstName} and I live in ${this.city}, ${this.country}. I am ${this.age}.`
+//     }
+//   }
+   
+//   const copyPerson = Object.assign({}, person)
+//   console.log(copyPerson)
+  
+//Day 8
 
+
+
+// let a="JavaScript"
+// let b=10
+// function letsLearnScope(){
+//   console.log(a,b)
+//   if (true){
+//     console.log(a,b)
+//   }
+// }
+// console.log(a,b)
+//Global variable
+let a="JavaScript"
+let b=10
+const letsLearnScope1=()=>{
+  if(true){
+    let a='Python'
+    let b=100
+    console.log(a,b)
+  }
+  console.log(a,b)
+}
+letsLearnScope1()
+console.log(a,b)
+
+//creating an object with values
+
+const person = {
+  firstName: 'Asabeneh',
+  lastName: 'Yetayeh',
+  age: 250,
+  country: 'Finland',
+  city: 'Helsinki',
+  skills: [
+    'HTML',
+    'CSS',
+    'JavaScript',
+    'React',
+    'Node',
+    'MongoDB',
+    'Python',
+    'D3.js'
+  ],
+  isMarried: true
+}
+console.log(person)
 
 
 
