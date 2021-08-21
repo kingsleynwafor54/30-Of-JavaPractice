@@ -262,16 +262,42 @@ const person = {
     'Python',
     'D3.js'
   ],
-  isMarried: true
+  isMarried: true,
+  status1: function(){
+      return `${this.skills} John is married true or false:${this.isMarried}`
+  },
+  'phone number':'+234085877489'
 }
-console.log(person)
+// console.log(person)
+// console.log(person.status1())
+// console.log(person["phone number"])
+// // console.log(person[status1])
+
+// //setting new keys for an object
+// person["phone number"]="+20202292920"
+// console.log(person["phone number"])
+
+person.nationality = 'Ethiopian'
+person.country = 'Finland'
+person.title = 'teacher'
+person.skills.push('Meteor')
+person.skills.push('SasS')
+person.isMarried = false
+console.log(person.status1())
 
 
+//To copy an object to another object
+const copyPerson=Object.assign({},person)
+console.log(copyPerson)
+//To get only the values of an object 
+ console.log(Object.values(copyPerson))
+ //To get both the values and the key of an object
+ const entries=Object.entries(copyPerson)
+ console.log(entries)
 
 
-
-
-
-
+ //Checking properties using hasOwnProperty()
+console.log(copyPerson.hasOwnProperty("name"))
+console.log(copyPerson.hasOwnProperty('score'))
 
 
