@@ -97,7 +97,7 @@ const counts=[]
 const count={}
 
 for(const l of langSet){
-    const filteredLang=languages3.filter((lng)=>langSet.length==5)
+    const filteredLang=languages3.filter((lng)=>lng===1)
     console.log(filteredLang)
     counts.push({lang:l,count:filteredLang.length})
 
@@ -110,3 +110,21 @@ const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present']
 const result=words.filter(word=>word.length>6);
 
 console.log(result)
+
+//counting unique item in an array
+const numbers3=[5,3,2,5,5,9,4,5]
+const setOfNumbers=new Set(numbers)
+
+console.log(setOfNumbers)
+//finding the unioun
+let a = [1, 2, 3, 4, 5]
+let b = [3, 4, 5, 6]
+let c = [...a, ...b]
+
+let A = new Set(a)
+let B = new Set(b)
+let C = new Set(c)
+
+console.log(C)
+//finding the intersect of sets
+let d=a.filter((num)=>B.has(num))
