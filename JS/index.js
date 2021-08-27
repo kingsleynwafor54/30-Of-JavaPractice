@@ -23,3 +23,90 @@ let y =function(callback){
 }
 y(x)
 
+
+
+
+//creating set from an array
+
+const languages=[
+    "English",
+    "Finnish",
+    "English",
+    "French",
+    "Spanish",
+    "English",
+    "French"
+]
+const setOfLanguages=new Set(languages)
+console.log(setOfLanguages)
+
+const languages1=[
+    "English",
+    "Finish",
+    "English",
+    "French",
+    "Spanish",
+    "English",
+    "French"
+]
+const setOfLanguage1=new Set(languages1)
+
+for(const k of setOfLanguage1){
+    console.log(k)
+}
+//Adding an element to a set
+
+
+//Creating an empty set
+
+const companies=new Set()
+console.log(companies.size)
+
+companies.add("Google")
+companies.add("Facebook")
+companies.add("Amazon")
+companies.add("Oracle")
+companies.add("Microsoft")
+
+console.log(companies.size)
+console.log(companies)
+const companies1=["Google","Facebook","Amazon","Oracle","Microsoft"]
+const setOfTechComp=new Set()
+for(const company of companies1){
+    setOfTechComp.add(company)
+}
+console.log(setOfTechComp)
+
+//Deleting an element a set
+
+console.log(setOfTechComp.delete("Google"))
+console.log(setOfTechComp.size)
+
+const languages3=["English",
+"Finish",
+"English",
+"French",
+"Spanish",
+"English",
+"French",]
+const langSet=new Set(languages3)
+console.log(langSet)
+console.log(langSet.size)
+
+const counts=[]
+const count={}
+
+for(const l of langSet){
+    const filteredLang=languages3.filter((lng)=>langSet.length==5)
+    console.log(filteredLang)
+    counts.push({lang:l,count:filteredLang.length})
+
+}
+
+console.log(counts)
+
+const words = ['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'];
+
+const result=words.filter(word=>word.length>6);
+
+console.log(result)
