@@ -127,4 +127,34 @@ let C = new Set(c)
 
 console.log(C)
 //finding the intersect of sets
-let d=a.filter((num)=>B.has(num))
+let e=[1,2,3,4,5,6]
+let f=[3,4,5,6]
+let E=new Set(e)
+// let F=new Set(F)
+
+// let c=a.filter((num)=>)
+//Destructuring an Object
+const rectangle={
+    width:20,height:10,area:200
+}
+let {width,height,area,perimeter}=rectangle
+console.log(rectangle)
+console.log(width,height,area,perimeter)
+
+//Object parameter without destructuring
+
+// const rectangle
+
+const rect={
+    width:20,
+    height:10
+}
+const calculatePerimeter=rectangle=>{
+    return 2*(rectangle.width+rectangle.height)
+}
+console.log(calculatePerimeter(rect))
+
+const nums=[1,2,3,4,5,6,7,8,9,10]
+let[num1,num2,num3,...rest]=nums
+console.log(num1,num2,num3)
+console.log(rest)
